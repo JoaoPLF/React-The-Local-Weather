@@ -7,7 +7,7 @@ const CityCard = ({ city }) => {
     const params = { lat: city.coords.lat, lon: city.coords.lon, id: city.id };
 
     navigate({
-      pathname: `/React-The-Local-Weather/weather/${city.state}/${city.city}`,
+      pathname: `/weather/${city.state}/${city.city}`,
       search: `?${createSearchParams(params)}`
     });
   };

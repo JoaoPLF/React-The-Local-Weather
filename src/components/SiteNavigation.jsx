@@ -10,7 +10,7 @@ const SiteNavigation = () => {
   const { pathname } = useLocation();
 
   const returnHome = () => {
-    navigate("/React-The-Local-Weather/");
+    navigate("/");
   };
 
   const toggleModal = () => {
@@ -18,7 +18,7 @@ const SiteNavigation = () => {
   };
 
   const addCity = () => {
-    const match = matchPath("/React-The-Local-Weather/weather/:state/:city", pathname);
+    const match = matchPath("/weather/:state/:city", pathname);
     const storageCities = (JSON.parse(localStorage.getItem("savedCities")) || []);
 
     const id = uid();

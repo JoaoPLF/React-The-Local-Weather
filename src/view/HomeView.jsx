@@ -38,7 +38,7 @@ const HomeView = ({ title }) => {
     const params = { lat: location.lat, lon: location.lon, preview: true };
 
     navigate({
-      pathname: `/React-The-Local-Weather/weather/${location.state}/${location.name}`,
+      pathname: `/weather/${location.state}/${location.name}`,
       search: `?${createSearchParams(params)}`
     });
   };
