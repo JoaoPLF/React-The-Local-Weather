@@ -25,7 +25,7 @@ const CityView = ({ title }) => {
     const updatedCities = cities.filter(city => city.id !== searchParams.get("id"));
     localStorage.setItem("savedCities", JSON.stringify(updatedCities));
 
-    navigate("/");
+    navigate("/React-The-Local-Weather/");
   };
 
   return (

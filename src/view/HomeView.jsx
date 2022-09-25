@@ -17,7 +17,7 @@ const HomeView = ({ title }) => {
     const timer = setTimeout(async () => {
       if (searchText !== "") {
         try {
-          const result = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchText}&limit=5&appid=8e656790619472d6bb427d4b9212af0d`);
+          const result = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchText}&limit=5&appid=8e656790619472d6bb427d4b9212af0d`);
           const resultJson = await result.json();
           setSearchResult(resultJson);
           setSearchError(false);
@@ -38,7 +38,7 @@ const HomeView = ({ title }) => {
     const params = { lat: location.lat, lon: location.lon, preview: true };
 
     navigate({
-      pathname: `/weather/${location.state}/${location.name}`,
+      pathname: `/React-The-Local-Weather/weather/${location.state}/${location.name}`,
       search: `?${createSearchParams(params)}`
     });
   };

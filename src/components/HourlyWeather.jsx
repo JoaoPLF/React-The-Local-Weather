@@ -45,7 +45,7 @@ const HourlyWeather = ({ lat, lon }) => {
                 </p>
                 <img
                   className="w-auto h-[50px] object-cover"
-                  src={`http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`}
+                  src={`https://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`}
                   alt=""
                 />
                 <p className="text-xl">

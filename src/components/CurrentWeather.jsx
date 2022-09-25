@@ -44,7 +44,7 @@ const CurrentWeather = ({ lat, lon }) => {
         </p>
         <img
           className="w-[150px] h-autoq"
-          src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
           alt=""
         />
       </div>

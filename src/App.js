@@ -8,8 +8,8 @@ function App() {
     <div className="flex flex-col min-h-screen font-Roboto bg-weather-primary">
       <SiteNavigation />
       <Routes>
-        <Route path="/" element={<HomeView title="Home" />} />
-        <Route path="/weather/:state/:city" element={<CityView title="Weather" />} />
+        <Route path="/React-The-Local-Weather/" element={<HomeView title="Home" />} />
+        <Route path="/React-The-Local-Weather/weather/:state/:city" element={<CityView title="Weather" />} />
       </Routes>
     </div>
   );
