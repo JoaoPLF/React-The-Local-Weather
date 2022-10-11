@@ -1,5 +1,4 @@
-# React
-**The Local Weather**
+# React - The Local Weather
 
 * This project shows weather data for the location typed into the input
 * It is possible to save locations to show them on the Home page
